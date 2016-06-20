@@ -2,6 +2,7 @@
                 
         function copyFunction(str)
         {
+            document.getElementById('cpy').setAttribute("title","copied");
             var ta=document.getElementById('ta');
             ta.style="visibility:show; position:absolute; z-index:2;";
             ta.innerText = document.getElementById(str).innerText;
