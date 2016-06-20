@@ -1,0 +1,445 @@
+body{
+	margin:0px;
+	padding:0px;	
+}
+ul{
+	list-style: none;
+}
+button {
+	border: 2px solid #eeeeee;
+}
+a:hover{
+	text-decoration: none;
+}
+/*---------back to top button----------------*/
+.back-to-top{
+	position: fixed;
+	bottom:0;
+	right:0;
+	color:white;
+	padding:5px;
+	width:40px;
+	border-radius: 5px;
+	z-index: 2;
+	display: none;
+	background-color: #20B2AA;
+}
+.display-back-to-top-btn:hover {
+	border-color: #00928A;
+}
+.display-back-to-top-btn{
+	position: fixed;
+	bottom:0;
+	right:0;
+	color:white;
+	padding:5px;
+	width:40px;
+	border-radius: 5px;
+	z-index: 2;
+	background-color: #20B2AA;
+	display: block;
+	margin: 10px;
+}
+
+/*---------Kodigopoint Text Styling---------*/
+.kodigopoint-text{
+	font-family:Forte; /*font-family:Bradley Hand ITC Buxton Sketch Chiller*/
+	color:#20B2AA; 
+	font-size:35px; 
+	text-shadow:2px 2px gray;
+}
+
+/*---------------- NavBar------------------*/
+.navbar.main-navbar {
+	background-color: white; 
+	margin: 0px;
+}
+.navbar-brand {
+	padding: 0px 0px 0px 10px;
+}
+.navbar.main-navbar span.icon-bar {
+	border:1px solid #20B2AA;
+}
+.navbar.menubar {
+	background-color:#20B2AA; 
+	border-radius: 0px;
+	margin: 0px;
+}
+.navbar.menubar a.dropdown-toggle {
+	color: white;
+}
+.navbar.menubar .pull-left {
+	margin-left: 15px;
+	margin-right: 0px;
+}
+.nav li a:focus, .nav li a:hover{
+	background-color: #36BEAF; /*light green*/
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
+    background-color: #e3f2fd;
+    color: #337ab7;
+}
+.navbar-form .form-group {
+	margin-left: 4px;
+}
+/*-----------side-bar----------------------------*/
+.side-bar {
+	/*padding: 0px;*/
+	list-style: none;
+}
+.side-bar ul{
+	margin-left: -40px;
+}
+.topic-image {
+	padding: 10px 10px 0px 10px;
+}
+.topic-image img {
+	width: 100%;
+}
+.sub-heading span{  
+	font-size:12px; /*size of book glyphicon*/
+}
+.sub-sub-heading span{  
+	font-size:12px; /*size of book glyphicon*/
+}
+.side-bar li{
+	line-height: 22px;
+	padding: 2px 0px;
+}
+.side-bar li a{
+	text-decoration: none;
+}
+.side-bar li:hover{
+	font-weight: bold;
+	border:2px solid #00928A;
+}
+.current-page{
+	margin-bottom: -8px;
+}
+.current-page .fa {
+	color: gray;
+}
+.current-page a{
+	padding: 0px;
+	padding-left:12px;
+	color: #666666;
+	font:13px verdana,helvetica,arial,sans-serif;
+}
+.main-heading{
+	margin-bottom: -8px;	
+	margin-top: -8px;	
+	box-shadow: none !important;
+	color: black;
+	font-weight: bolder;
+	text-shadow: 1px 1px 1px gray;
+	font:13px verdana,helvetica,arial,sans-serif;
+}
+.sub-heading {
+	margin-bottom: -5px;
+}
+.sub-heading a{
+	padding-left:12px;
+	font:13px verdana,helvetica,arial,sans-serif;
+	color: black;
+}
+.sub-sub-heading{
+	/*text-indent: 9px;*/
+	margin-bottom: -5px;
+}
+.sub-sub-heading a{
+	padding-left:22px;
+	color: black;
+	font:13px verdana,helvetica,arial,sans-serif;
+}
+
+/*--------Previous Current Next Buttons Bar--------*/
+.pager {
+	margin-bottom: 0px;
+}
+.pager li>a:focus, .pager li>a:hover {
+	background-color: #20B2AA;
+	color: white;
+}
+.pager li>a{
+	border-color: #20B2AA;
+	color: #20B2AA	
+}
+/*.my-btn{
+  	padding: 10px;
+  	font-size: 12px;
+  	border-radius: 5px;
+  	border: 2px solid #20B2AA;
+  	margin-left: -9px;
+}
+.btn {
+	text-decoration: none;
+}
+.btn:hover .my-btn{
+	border: 1px solid #00928A;
+	background-color: #20B2AA;
+	color: white
+} */
+textarea::after{
+ content:"thisudbfgwbdfgdbfgwweybfgewyb";
+ color:red;
+}
+
+/*---------Heading Styling in Main Page Content----------*/
+h2{
+	color: #337ab7;
+}
+hr{
+	border:1px solid #d3f8f6;
+}
+.page-border{
+		border-left: 2px dotted #20B2AA;	
+/*		border-right: 2px dotted #20B2AA;	*/
+}
+
+/*-------- code copy Area and copy and download button -----------*/
+.codearea{
+    border:2px solid #00928A;
+    position: relative;
+}
+.codearea .react {
+	position: absolute;
+	right: 0px;
+	top: 0px;
+}
+/*.codarea-button{
+    float:right;
+}*/
+.codetextarea{
+    width:100%;
+    background-color: white;
+    outline:none;
+    border:none;
+    overflow-y:hidden;
+    resize:none;
+    margin-bottom: 0px;
+}
+.copy{
+	float:right;
+    background-color: white;
+    border-radius: 5px;
+    padding: 6px 8px 6px 8px;
+}
+.copy:hover{
+	background-color:#20B2AA;
+	color: white; 
+	border-color: #00928A;
+}
+.download{
+    float:right;
+    background-color: white;
+    border-radius: 5px;
+    padding: 6px;
+    margin-right: 5px;
+}
+.download:hover{
+	background-color:#20B2AA;
+	color: white; 
+	border-color: #00928A;
+}
+
+/*-------Learn In Previous Chapter Styling-------*/
+fieldset{
+	border:2px solid  #337ab7;
+	padding: 10px;
+}
+legend{
+	border:none;
+	width: auto;
+	padding: 0px 10px;
+}
+/*------Figure caption----------------*/
+figcaption{
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+/*-------Footer-----------------*/
+/*.footer-border{
+	background-image:url("footer-back.jpg");
+	background-size: 2px 2px;
+	border:1px solid gray; 
+	margin-top:10px;
+	margin-bottom:10px; 
+	border-radius:5px;
+}*/
+footer{
+	color:white;
+	padding:25px 0px 25px 0px;	
+	background-color: #404040;	
+}
+footer div > h4{
+	padding-bottom: 5px;
+	border-bottom: 2px solid gray;
+}
+footer div > ul li{
+	margin-left: -20px;
+	border-bottom: 1px solid black;
+	box-shadow: 0px 1px 0px gray;
+	margin-bottom: 3px;	
+	padding: 2px 0px;
+}
+footer div > ul li a{
+	color: white;
+}
+footer div > ul li:hover a{
+	color:gray;
+}
+footer p{
+	text-align: justify;
+}
+/*.footer-bottom-bar{
+	border-top: 5px solid blue;
+}*/
+
+/* -------------- Social icons --------------*/
+ul.social-network {   /* UI - Social Icons List */
+    list-style: none;
+    display: inline;
+    margin-left:0 !important;
+    padding: 0;
+}
+ul.social-network li {   /* UI - Social Icons List Elements */
+    display: inline;
+    margin: 0 5px;
+	border-bottom: none;
+	box-shadow: none;
+}
+ul.social-network li a {
+    background-color: #20B2AA;
+}
+/* footer social icons */
+.social-network a.icoRss:hover {   /* UI - Social Icons */
+    background-color: #F56505;
+}
+.social-network a.icoFacebook:hover {   /* UI - Social Icons */
+    background-color:#3B5998;
+}
+.social-network a.icoTwitter:hover {   /* UI - Social Icons */
+    background-color:#33ccff;
+}
+.social-network a.icoGoogle:hover {   /* UI - Social Icons */
+    background-color:#BD3518;
+}
+.social-network a.icoVimeo:hover {   /* UI - Social Icons */
+    background-color:#0590B8;
+}
+.social-network a.icoLinkedin:hover {
+    background-color:#007bb7;
+}
+.social-network a.icoRss:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
+.social-network a.icoGoogle:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {   /* UI - Social Icons */
+    color:#fff;
+}
+.social-circle li a {   /* UI - Social Icons Circle Style */
+    display:inline-block;
+    position:relative;
+    margin:0 auto 0 auto;
+    -moz-border-radius:50%;
+    -webkit-border-radius:50%;
+    border-radius:50%;
+    text-align:center;
+    width: 40px;
+    height: 40px;
+    font-size:16px;
+    /*background-color: #800000;*/
+}
+.social-circle li i {   /* UI - Circle Social Icons */
+    margin:0;
+    line-height:40px;
+    text-align: center;
+}
+
+.social-circle li a:hover /*, .triggeredHover*/ {   /* UI - Social Icons */
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+.social-circle a {   /* UI - Circle Social Icons */
+    color: #fff;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -o-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    transition: all 0.8s;
+}
+/*
+.logo-round{
+	padding-top: 5px;
+    padding-left: 11px;
+    margin-left: 10px;
+    background-color: #00928A;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 35px;
+	margin-top: 3px;
+}
+.logo{
+	transition-duration:1.5s;
+}	
+.logo:hover{
+	opacity: 1;
+	-moz-transform: rotate(360deg) ;
+	-webkit-transform:  rotate(360deg) ;
+	-o-transform:  rotate(360deg);
+	transform:  rotate(360deg) ;
+}
+.fb:hover{
+	background-color: #3B5998;
+}
+.gplus:hover{
+	background-color: #CE4439;
+}
+.twit:hover{
+	background-color: #53A6EA;
+}
+.ln:hover{
+	background-color: #0B2B5C;
+}
+.v:hover{
+	background-color: #613887;
+}
+*/
+
+/*----------Media Query------------------*/
+@media  screen and (min-width: 1024px){
+	.side-bar {
+		display: inline-block;
+	}
+}
+@media (max-width: 767px) {
+	.dropdown-menu>li>a {
+		color: white;
+	}
+	.dropdown-menu>li>a:hover {
+		color: white;
+	}
+}
+@media  screen and (max-width: 340px){
+	.kp-logo{
+		margin-top:-60px;
+	}
+	.logo-size{
+		width:95%;
+	}	
+}
+@media  screen and (max-width: 320px){
+	.kp-logo{
+		margin-top:-60px;
+	}
+	.logo-size{
+		width:80%;
+	}
+}

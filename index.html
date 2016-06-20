@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>KodigoPoint</title>
+	<link rel="icon" type="image/x-icon" href="logo-1.png"> 	
+	<!-- Offline Bootstrap -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/bootstrap.css"> -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"> -->
+
+    <!-- Online Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+  	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> -->
+    
+    <!-- Font-Awesome -->
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+	<!-- Custom JS -->
+	<script  src="script.js"> </script>	
+
+	<script src="js/jquery.min.js"></script> 
+	<!-- <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.2.min.js"> -->
+	<!-- </script> -->
+
+	<!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
+  	<!-- <script type="text/javascript" src="header.js"></script> -->
+  	<script src="js/bootstrap.min.js"></script>
+
+
+	<script>
+
+		setTimeout('update()', 2)
+
+		function update()
+		{
+			var ta=document.getElementsByClassName("codetextarea");
+			var i;
+			for(i in ta )
+			{	
+				while (ta[i].rows > 1 &&ta[i].scrollHeight < ta[i].offsetHeight)
+				{
+					ta[i].rows--;
+				}
+				while (ta[i].scrollHeight > ta[i].offsetHeight)
+				{
+					ta[i].rows++;
+				}
+			}
+		}	
+
+		setInterval(function(){getPos()},1000);
+
+		$(document).ready(function(){
+		    $('[data-toggle="tooltip"]').tooltip();   
+		    $("textarea").resizable();
+		});
+
+		
+
+		function getPos(){
+			// alert("hello");
+			var element=document.getElementById('top-of-page');
+			var viewportOffset = element.getBoundingClientRect();
+			var top=viewportOffset.top;
+
+			if(top < -100)
+				document.getElementById("btn").className = "display-back-to-top-btn";
+
+			else if(top==0)
+				document.getElementById("btn").className = "back-to-top";
+
+			else if(top <-5 || top > 5 )
+				document.getElementById("btn").className = "back-to-top";
+
+
+		}
+
+		
+
+	</script>
+
+	<!-- Font-Awesome -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body id="top-of-page">
+	<!-- Bottom to Top Button -->
+	<a href="#"><button class="back-to-top" id="btn"><i class="fa fa-hand-o-up" aria-hidden="true"></i></button></a>
+	<!-- End of Bottom to Top Button -->
+
+	<!-- Navbars Start Here-->
+	<header></header>
+	<!-- Navbar End Here -->	
+
+	<div class="container-fluid">	  
+		<div class="row">
+			<!-- Side Bar Start Here -->
+			<div class="col-md-2 side-bar" id="KodigoMenuBarRight">
+				<div class="row topic-image">
+					<img src="language.png" class="img img-responsive">
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-3 col-md-12  col-xs-6">
+						<ul>
+							<li role="presentation" class="main-heading">Introduction</li>
+							<li role="presentation" class="current-page"><span class="fa fa-hand-o-right"></span><a href="#">Why Java</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">JDK</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">JRE</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">JVM</a></li>
+						</ul>
+					</div>
+
+					<div class=" col-sm-3 col-md-12 col-xs-6">
+						<ul>
+							<li role="presentation" class="main-heading">Keywords</li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">This</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Super</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Static</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Profile</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Messages</a></li>
+						</ul>
+					</div>
+
+					<div class=" col-sm-3 col-md-12 col-xs-6">
+						<ul>
+							<li role="presentation" class="main-heading">Constructor</li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Default</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Parameterized</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Profile</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Messages</a></li>
+						</ul>
+					</div>
+
+					<div class=" col-sm-3 col-md-12 col-xs-6">
+						<ul>
+							<li role="presentation" class="main-heading">Constructor</li>
+							<li role="presentation" class="sub-heading"><a href="#">Default<span class="fa fa-chevron-right" style="float:right; margin-top:2px"></span></a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Parameterized</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Profile</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Messages</a></li>
+						</ul>
+					</div>
+
+					<div class=" col-sm-3 col-md-12 col-xs-6">
+						<ul>
+							<li role="presentation" class="main-heading">Constructors</li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Default</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Parameterized</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-sub-heading"><span class="fa fa-book"></span><a href="#">Sub-Cont</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Profile</a></li>
+							<li role="presentation" class="sub-heading"><span class="fa fa-book"></span><a href="#">Messages</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- SideBar End Here -->
+
+			<div class="col-md-8 page-border">
+				<!-- Topic Navigation -->
+				<ul class="pager">
+				</ul>				
+			  	<!-- End of Topic Navigation -->
+
+
+			  	<!-- page content row starts-->
+			  	<div class="row">
+			  		<div class="col-md-12">
+			  			<hr>
+			  			<h2>Core Java</h2>
+			  			<p>Core Java tutorial provides basic and advanced ideas of Java Programming language. Our java tutorial is designed for beginners and professionals.</p>
+
+			  			<p>Java is a <b>object oriented programming language</b> originally developed by <B>Sun Microsystems </B>and released in 1995.</p>
+
+			  			<p>Our Java tutorial include all points of This Java Programming tutorial covers all the topics of java such as introduction, control statements, form handling, array, string, file handling, date and time, object-oriented programming in java etc.</p>
+
+			  			<hr>
+			  					  			
+			  			<h2>Simple Java Program</h2>			  				
+		  				<div class="codearea">
+                        	                            
+	                        <div class="react">
+			  					<button data-toggle="tooltip" title="Copy to Clipboard" class="copy" onclick="copyFunction('helloWorld');"><span class="fa fa-copy"></span> Copy</button>	
+
+								<button data-toggle="tooltip" title="Download with Extension" class="download" onclick="saveTextAsFile('helloWorld','c');"><span class="glyphicon glyphicon-download"></span> Download</button>	
+							</div>
+							                            
+	                        <b>	                            
+	                        	<pre class="codetextarea" id="helloWorld">
+1.  #include&lt;stdio.h&gt;
+2.  int main()
+3.    {
+4.         <span style="color:red">/* It is a comment */</span>
+5.         printf(&quot;Thank you Almighty God&quot;);
+6.         return 0;
+7.    }							</pre>
+		                    </b>	                            
+                        </div>
+                        <!-- codearea -->
+						<textarea id="ta" style="display:none; position:absolute;"></textarea>
+
+			  		</div><!-- col-md-12 -->
+			  	</div><!-- page content row ends-->
+
+			  	<hr>
+
+			  	<div class="row">
+			  		<div class="col-md-10 col-md-offset-1">
+			  			<figure>
+				  			<img src="1.png" class="img-responsive">
+				  			<br>
+				  			<figcaption>Fig.First Program</figcaption>
+				  		</figure>	
+			  		</div>
+			  	</div>
+
+			  	<hr>
+
+			  	<!-- learn in previous chapter -->
+			  	<div class="row">
+			  		<div class="col-md-11 col-sm-11 col-xs-11">
+			  			<fieldset>
+			  				<legend>Learn in Previous Chapter</legend>
+			  				<p>Your Content Here</p>
+			  			</fieldset>
+			  		</div>
+			  	</div>
+
+			  	<hr>
+
+				<!-- Topic Navigation -->
+				<ul class="pager">
+				</ul>	
+				<br>			
+			  	<!-- End of Topic Navigation -->
+
+			</div><!-- col-md-8 -->
+		</div><!-- row -->
+	<div><!-- container-fluid-->
+	
+	<!-- Footer Start Here -->
+	<footer class="row"></footer>
+	<!-- Footer End here -->
+
+	<script type="text/javascript" src="header.js"></script>
+	<script type="text/javascript" src="topic-pager.js"></script>
+	<script type="text/javascript" src="footer.js"></script>
+</body>
+</html>
